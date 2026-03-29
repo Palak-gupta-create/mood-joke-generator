@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  background: #0f2027;
+  color: white;
+}
+
+/* 🔥 AI BLOBS (floating colors) */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  animation: move 10s infinite alternate;
+}
+
+/* body::before {
+  background: #ff6ec4;
+  top: -100px;
+  left: -100px;
+} */
+
+body::after {
+  background: #737375;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Extra blob */
+.container::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #b83535;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  animation: move 12s infinite alternate;
+}
+
+@keyframes move {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(100px, 100px); }
+}
+
+/* 🔥 GLASS CARD */
+.container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08); /* light glass */
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 380px;
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow: 
+    0 8px 32px rgba(0,0,0,0.4),
+    inset 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Title glow */
+h1 {
+  color: white;
+  text-shadow: 0 0 15px rgba(255,255,255,0.8);
+}
+
+
+/* Buttons */
+button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #ffcc00, #ff9900);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+/* Joke text */
+#joke {
+  color: #f1f1f1;
+  font-weight: 500;
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
