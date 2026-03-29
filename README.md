@@ -42,7 +42,8 @@ script.js
 ---
 
 ## 📸 Preview
-(Add screenshot here later)
+<img width="1325" height="696" alt="image" src="https://github.com/user-attachments/assets/a88b0cd7-97ea-4ce1-b241-239c11aedb98" />
+
 
 ---
 
