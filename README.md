@@ -60,11 +60,3 @@ script.js
 GitHub: https://github.com/Palak-gupta-create  
 
 ---
-
-## ⭐ Contribute
-Feel free to fork this repository and contribute!
-
----
-
-## 📜 License
-This project is open-source and free to use.
